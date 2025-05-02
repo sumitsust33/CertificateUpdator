@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class CertificateUpdate {
 
-    private long timestamp;
-    private String isin;
-    private double bidPrice;
-    private int bidSize;
-    private double askPrice;
-    private int askSize;
-    private LocalDate maturityDate;
+    private final long timestamp;
+    private final String isin;
+    private final double bidPrice;
+    private final int bidSize;
+    private final double askPrice;
+    private final int askSize;
+    private final LocalDate maturityDate;
 
     public CertificateUpdate(long timestamp, String isin, double bidPrice, int bidSize,
                              double askPrice, int askSize, LocalDate maturityDate) {

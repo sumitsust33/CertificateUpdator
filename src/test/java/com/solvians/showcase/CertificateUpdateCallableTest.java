@@ -18,7 +18,6 @@ public class CertificateUpdateCallableTest {
             CertificateUpdate certificateUpdate = callable.call();
             CertificateUpdateTest certificateUpdateTest = new CertificateUpdateTest();
             certificateUpdateTest.testCertificateUpdate(certificateUpdate);
-
         } catch (Exception e) {
             throw new RuntimeException("Failed to get certificate update", e);
         }

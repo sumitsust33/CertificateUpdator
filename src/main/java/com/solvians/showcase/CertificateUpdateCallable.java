@@ -8,7 +8,7 @@ import static com.solvians.showcase.RandomGenerator.*;
 public class CertificateUpdateCallable implements Callable<CertificateUpdate> {
 
     @Override
-    public CertificateUpdate call() throws Exception {
+    public CertificateUpdate call() {
         long timestamp = System.currentTimeMillis();
         String isin = generateISIN();
         double bidPrice = getRandomDoubleValue(100.00, 200.01, 2);

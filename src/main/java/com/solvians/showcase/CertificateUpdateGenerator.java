@@ -22,7 +22,7 @@ public class CertificateUpdateGenerator {
             futureCertificateUpdates.add(executorService.submit(new CertificateUpdateCallable()));
         }
 
-        executorService.shutdown();
+        executorService.shutdownNow();
 
         return futureCertificateUpdates.stream().map(future -> {
             try {
